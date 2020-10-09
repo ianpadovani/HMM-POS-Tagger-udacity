@@ -1,4 +1,15 @@
-## Introduction
+# HMM Part-Of-Speech Tagger
+Showcases two POS tagging models trained using a universal tagset.
+
+The Most Frequent Class tagger simply selects the POS tag that appears most often for each word. This received a 93% accuracy rate on the test data.
+
+The Hidden Markov Model tagger considers each tag to be a state in a Finite State Machine, alongside the start and end states. A set of probabilities allowing transition between the states is used to account for the order that tags tend to be found in natural language. Each state also has a set of emission probabilities which determine how likely each word is to be emitted by that state. This recieved a 95% accuracy rate on test data.
+
+It should be noted that the accuracy would decrease on larger tagsets, as there will be more room for error. These accuracy rates are slightly inflated due to the universal tagset used.
+
+The original GitHub repo for this project can be found [here](https://github.com/udacity/hmm-tagger).
+
+## Introduction - Udacity's Readme
 
 In this notebook, you'll use the [Pomegranate](https://github.com/jmschrei/pomegranate) library to build a hidden Markov model for part of speech tagging with a [universal tagset](http://www.petrovi.de/data/universal.pdf). Hidden Markov models have been able to achieve >96% tag accuracy with larger tagsets on realistic text corpora. Hidden Markov models have also been used for speech recognition and speech generation, machine translation, gene recognition for bioinformatics, and human gesture recognition for computer vision, and more.
 
