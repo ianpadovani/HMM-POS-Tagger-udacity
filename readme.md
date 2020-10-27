@@ -3,7 +3,7 @@ Showcases two POS tagging models trained using a universal tagset.
 
 The Most Frequent Class tagger simply selects the POS tag that appears most often for each word. This received a 93% accuracy rate on the test data.
 
-The Hidden Markov Model tagger considers each tag to be a state in a Finite State Machine, alongside the start and end states. A set of probabilities allowing transition between the states is used to account for the order that tags tend to be found in natural language. Each state also has a set of emission probabilities which determine how likely each word is to be emitted by that state. This recieved a 95% accuracy rate on test data.
+The Hidden Markov Model tagger considers each tag to be a state in a Finite State Machine, alongside the start and end states. A set of probabilities allowing transition between the states is used to account for the order that tags tend to be found in natural language. Each state also has a set of emission probabilities which determine how likely each word is to be emitted by that state. This received a 95% accuracy rate on test data.
 
 It should be noted that the accuracy would decrease on larger tagsets, as there will be more room for error. These accuracy rates are slightly inflated due to the universal tagset used.
 
